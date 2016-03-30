@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>reform.processing package &mdash; reformulate 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="reformulate 1.0 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> reformulate
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="simple">
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">reformulate</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>reform.processing package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/reform.processing.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="reform-processing-package">
+<h1>reform.processing package<a class="headerlink" href="#reform-processing-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-reform.processing.normalize">
+<span id="reform-processing-normalize-module"></span><h2>reform.processing.normalize module<a class="headerlink" href="#module-reform.processing.normalize" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="reform.processing.normalize.Normalizer">
+<em class="property">class </em><code class="descclassname">reform.processing.normalize.</code><code class="descname">Normalizer</code><a class="headerlink" href="#reform.processing.normalize.Normalizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Removes common stop words and normalizes a corpus</p>
+<dl class="method">
+<dt id="reform.processing.normalize.Normalizer.clean">
+<code class="descname">clean</code><span class="sig-paren">(</span><em>term</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.processing.normalize.Normalizer.clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes common stopwords, too short words and language-specific keywords, removes
+:param term: term to be cleaned
+:return: cleaned term or None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="reform.processing.normalize.Normalizer.normalize">
+<code class="descname">normalize</code><span class="sig-paren">(</span><em>term</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.processing.normalize.Normalizer.normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalizes a term
+:param term: input string term
+:return: normalized term</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="reform.processing.normalize.Normalizer.process_api_term">
+<code class="descname">process_api_term</code><span class="sig-paren">(</span><em>term</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.processing.normalize.Normalizer.process_api_term" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query normalization
+:param query: input query
+:return: cleaned, split, normalized query</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="reform.processing.normalize.Normalizer.process_query">
+<code class="descname">process_query</code><span class="sig-paren">(</span><em>query</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.processing.normalize.Normalizer.process_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query normalization
+:param query: input query
+:return: cleaned, split, normalized query</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="reform.processing.normalize.Normalizer.process_snippet">
+<code class="descname">process_snippet</code><span class="sig-paren">(</span><em>snippet</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.processing.normalize.Normalizer.process_snippet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Full text processing of raw terms
+:param snippet: input snippet
+:return: cleaned, split, normalized snippet</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="reform.processing.normalize.Normalizer.split">
+<code class="descname">split</code><span class="sig-paren">(</span><em>term</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.processing.normalize.Normalizer.split" title="Permalink to this definition">¶</a></dt>
+<dd><p>Split camelCase and undescore_terms into separate terms, removes punctuation, spaces
+:param term: term to be split
+:return: list of split terms</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-reform.processing.vectorize">
+<span id="reform-processing-vectorize-module"></span><h2>reform.processing.vectorize module<a class="headerlink" href="#module-reform.processing.vectorize" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="reform.processing.vectorize.Vectorizer">
+<em class="property">class </em><code class="descclassname">reform.processing.vectorize.</code><code class="descname">Vectorizer</code><a class="headerlink" href="#reform.processing.vectorize.Vectorizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="reform.processing.vectorize.Vectorizer.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>path</em>, <em>base_name</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.processing.vectorize.Vectorizer.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the model to the memory
+:param path: base folder path
+:param base_name: name of the file, extentions are connected automatically
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="reform.processing.vectorize.Vectorizer.normalize_and_reformulate">
+<code class="descname">normalize_and_reformulate</code><span class="sig-paren">(</span><em>query</em>, <em>all_asts=False</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.processing.vectorize.Vectorizer.normalize_and_reformulate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalizes and reformulates raw query
+:param query: input string
+:return: list of ASTs as reformulation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="reform.processing.vectorize.Vectorizer.reformulate">
+<code class="descname">reformulate</code><span class="sig-paren">(</span><em>sentence</em>, <em>num_res=5</em>, <em>public_only=False</em>, <em>num_candidates=10</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.processing.vectorize.Vectorizer.reformulate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the sentence, cleans it and reformulates
+:param sentence: list of words
+:param num_res: number of output terms
+:param public_only: use only public API methods
+:param num_candidates: number of candidate terms for further filtration
+:return: list of reformulated terms</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="reform.processing.vectorize.Vectorizer.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>path</em>, <em>base_name</em>, <em>info=None</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.processing.vectorize.Vectorizer.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the model
+:param path: folder to save the model
+:param base_name: extentions are connected to the base name
+:param info: additional info about file type
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="reform.processing.vectorize.Vectorizer.train">
+<code class="descname">train</code><span class="sig-paren">(</span><em>corpus</em>, <em>api</em>, <em>min_count</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.processing.vectorize.Vectorizer.train" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>corpus</strong> &#8211; snippets, list or another iterable</li>
+<li><strong>api</strong> &#8211; API elements to use for reformulation: classes, methods, etc.</li>
+<li><strong>min_count</strong> &#8211; threshold for term occurrence to be included in the model</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-reform.processing">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-reform.processing" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, LudditeLabs.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
