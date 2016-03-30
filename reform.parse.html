@@ -1,0 +1,599 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>reform.parse package &mdash; reformulate 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="reformulate 1.0 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> reformulate
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="simple">
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">reformulate</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>reform.parse package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/reform.parse.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="reform-parse-package">
+<h1>reform.parse package<a class="headerlink" href="#reform-parse-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-reform.parse.javaclassvisitor">
+<span id="reform-parse-javaclassvisitor-module"></span><h2>reform.parse.javaclassvisitor module<a class="headerlink" href="#module-reform.parse.javaclassvisitor" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="reform.parse.javaclassvisitor.JavaClassVisitor">
+<em class="property">class </em><code class="descclassname">reform.parse.javaclassvisitor.</code><code class="descname">JavaClassVisitor</code><a class="headerlink" href="#reform.parse.javaclassvisitor.JavaClassVisitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#reform.parse.javacorpus.JavaBaseVisitor" title="reform.parse.javacorpus.JavaBaseVisitor"><code class="xref py py-class docutils literal"><span class="pre">reform.parse.javacorpus.JavaBaseVisitor</span></code></a></p>
+<p>Visits important nodes (ClassDelaration, MethodDefinition) to extract properties</p>
+<dl class="method">
+<dt id="reform.parse.javaclassvisitor.JavaClassVisitor.leave_ClassDeclaration">
+<code class="descname">leave_ClassDeclaration</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javaclassvisitor.JavaClassVisitor.leave_ClassDeclaration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javaclassvisitor.JavaClassVisitor.visit_ClassDeclaration">
+<code class="descname">visit_ClassDeclaration</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javaclassvisitor.JavaClassVisitor.visit_ClassDeclaration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javaclassvisitor.JavaClassVisitor.visit_ImportDeclaration">
+<code class="descname">visit_ImportDeclaration</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javaclassvisitor.JavaClassVisitor.visit_ImportDeclaration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javaclassvisitor.JavaClassVisitor.visit_MethodDeclaration">
+<code class="descname">visit_MethodDeclaration</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javaclassvisitor.JavaClassVisitor.visit_MethodDeclaration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-reform.parse.javacorpus">
+<span id="reform-parse-javacorpus-module"></span><h2>reform.parse.javacorpus module<a class="headerlink" href="#module-reform.parse.javacorpus" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="reform.parse.javacorpus.JavaBaseVisitor">
+<em class="property">class </em><code class="descclassname">reform.parse.javacorpus.</code><code class="descname">JavaBaseVisitor</code><a class="headerlink" href="#reform.parse.javacorpus.JavaBaseVisitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">plyj.model.Visitor</span></code></p>
+<p>Visits important nodes (ClassDelaration, MethodDefinition) to extract properties</p>
+<dl class="method">
+<dt id="reform.parse.javacorpus.JavaBaseVisitor.add_term">
+<code class="descname">add_term</code><span class="sig-paren">(</span><em>api_term</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javacorpus.JavaBaseVisitor.add_term" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javacorpus.JavaBaseVisitor.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javacorpus.JavaBaseVisitor.clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javacorpus.JavaBaseVisitor.normalized_name">
+<code class="descname">normalized_name</code><span class="sig-paren">(</span><em>api_term</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javacorpus.JavaBaseVisitor.normalized_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="reform.parse.javacorpus.JavaCorpusStorage">
+<em class="property">class </em><code class="descclassname">reform.parse.javacorpus.</code><code class="descname">JavaCorpusStorage</code><span class="sig-paren">(</span><em>publicAPIPath</em>, <em>visitor</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javacorpus.JavaCorpusStorage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>The storage holds all parsed Java snippets
+The storage also holds all parsed Java classes
+The key of the class storage is the class name - in the lower case. Which is used for operation,
+while the real name is used for the output</p>
+<dl class="method">
+<dt id="reform.parse.javacorpus.JavaCorpusStorage.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>st</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javacorpus.JavaCorpusStorage.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds data to the storage</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="reform.parse.javacorpus.NoErrorLexer">
+<em class="property">class </em><code class="descclassname">reform.parse.javacorpus.</code><code class="descname">NoErrorLexer</code><a class="headerlink" href="#reform.parse.javacorpus.NoErrorLexer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">plyj.parser.MyLexer</span></code></p>
+<dl class="method">
+<dt id="reform.parse.javacorpus.NoErrorLexer.t_error">
+<code class="descname">t_error</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javacorpus.NoErrorLexer.t_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="reform.parse.javacorpus.NoLogParser">
+<em class="property">class </em><code class="descclassname">reform.parse.javacorpus.</code><code class="descname">NoLogParser</code><a class="headerlink" href="#reform.parse.javacorpus.NoLogParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">plyj.parser.Parser</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="reform.parse.javacorpus.java_parse">
+<code class="descclassname">reform.parse.javacorpus.</code><code class="descname">java_parse</code><span class="sig-paren">(</span><em>src</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javacorpus.java_parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses snippets
+:param src: java source file
+:return:</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-reform.parse.javamethodvisitor">
+<span id="reform-parse-javamethodvisitor-module"></span><h2>reform.parse.javamethodvisitor module<a class="headerlink" href="#module-reform.parse.javamethodvisitor" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="reform.parse.javamethodvisitor.JavaMethodVisitor">
+<em class="property">class </em><code class="descclassname">reform.parse.javamethodvisitor.</code><code class="descname">JavaMethodVisitor</code><a class="headerlink" href="#reform.parse.javamethodvisitor.JavaMethodVisitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#reform.parse.javacorpus.JavaBaseVisitor" title="reform.parse.javacorpus.JavaBaseVisitor"><code class="xref py py-class docutils literal"><span class="pre">reform.parse.javacorpus.JavaBaseVisitor</span></code></a></p>
+<p>Visits important nodes (ClassDelaration, MethodDeclaration) to extract properties</p>
+<dl class="method">
+<dt id="reform.parse.javamethodvisitor.JavaMethodVisitor.leave_ClassDeclaration">
+<code class="descname">leave_ClassDeclaration</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javamethodvisitor.JavaMethodVisitor.leave_ClassDeclaration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javamethodvisitor.JavaMethodVisitor.visit_ClassDeclaration">
+<code class="descname">visit_ClassDeclaration</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javamethodvisitor.JavaMethodVisitor.visit_ClassDeclaration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javamethodvisitor.JavaMethodVisitor.visit_MethodDeclaration">
+<code class="descname">visit_MethodDeclaration</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javamethodvisitor.JavaMethodVisitor.visit_MethodDeclaration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javamethodvisitor.JavaMethodVisitor.visit_MethodInvocation">
+<code class="descname">visit_MethodInvocation</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javamethodvisitor.JavaMethodVisitor.visit_MethodInvocation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-reform.parse.javascriptcorpus">
+<span id="reform-parse-javascriptcorpus-module"></span><h2>reform.parse.javascriptcorpus module<a class="headerlink" href="#module-reform.parse.javascriptcorpus" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="reform.parse.javascriptcorpus.JavaScriptBaseVisitor">
+<em class="property">class </em><code class="descclassname">reform.parse.javascriptcorpus.</code><code class="descname">JavaScriptBaseVisitor</code><a class="headerlink" href="#reform.parse.javascriptcorpus.JavaScriptBaseVisitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Visits important nodes (ClassDelaration, MethodDefinition) to extract properties</p>
+<dl class="method">
+<dt id="reform.parse.javascriptcorpus.JavaScriptBaseVisitor.add_term">
+<code class="descname">add_term</code><span class="sig-paren">(</span><em>api_term</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptcorpus.JavaScriptBaseVisitor.add_term" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javascriptcorpus.JavaScriptBaseVisitor.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptcorpus.JavaScriptBaseVisitor.clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javascriptcorpus.JavaScriptBaseVisitor.generic_visit">
+<code class="descname">generic_visit</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptcorpus.JavaScriptBaseVisitor.generic_visit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javascriptcorpus.JavaScriptBaseVisitor.normalized_name">
+<code class="descname">normalized_name</code><span class="sig-paren">(</span><em>api_term</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptcorpus.JavaScriptBaseVisitor.normalized_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javascriptcorpus.JavaScriptBaseVisitor.visit">
+<code class="descname">visit</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptcorpus.JavaScriptBaseVisitor.visit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javascriptcorpus.JavaScriptBaseVisitor.visit_FuncDecl">
+<code class="descname">visit_FuncDecl</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptcorpus.JavaScriptBaseVisitor.visit_FuncDecl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javascriptcorpus.JavaScriptBaseVisitor.visit_FunctionCall">
+<code class="descname">visit_FunctionCall</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptcorpus.JavaScriptBaseVisitor.visit_FunctionCall" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="reform.parse.javascriptcorpus.JavaScriptCorpusStorage">
+<em class="property">class </em><code class="descclassname">reform.parse.javascriptcorpus.</code><code class="descname">JavaScriptCorpusStorage</code><span class="sig-paren">(</span><em>publicAPIPath</em>, <em>visitor</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptcorpus.JavaScriptCorpusStorage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>The storage holds all parsed JavaScript snippets
+The storage also holds all parsed JavaScript classes
+The key of the class storage is the class name - in the lower case. Which is used for operation,
+while the real name is used for the output</p>
+<dl class="method">
+<dt id="reform.parse.javascriptcorpus.JavaScriptCorpusStorage.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>st</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptcorpus.JavaScriptCorpusStorage.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds to the storage</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="reform.parse.javascriptcorpus.js_parse">
+<code class="descclassname">reform.parse.javascriptcorpus.</code><code class="descname">js_parse</code><span class="sig-paren">(</span><em>src</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptcorpus.js_parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses snippets
+:param src: JavaScript source file
+:return:</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-reform.parse.javascriptmethodvisitor">
+<span id="reform-parse-javascriptmethodvisitor-module"></span><h2>reform.parse.javascriptmethodvisitor module<a class="headerlink" href="#module-reform.parse.javascriptmethodvisitor" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="reform.parse.javascriptmethodvisitor.JavaScriptMethodVisitor">
+<em class="property">class </em><code class="descclassname">reform.parse.javascriptmethodvisitor.</code><code class="descname">JavaScriptMethodVisitor</code><a class="headerlink" href="#reform.parse.javascriptmethodvisitor.JavaScriptMethodVisitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#reform.parse.javascriptcorpus.JavaScriptBaseVisitor" title="reform.parse.javascriptcorpus.JavaScriptBaseVisitor"><code class="xref py py-class docutils literal"><span class="pre">reform.parse.javascriptcorpus.JavaScriptBaseVisitor</span></code></a></p>
+<p>Visits important nodes (ClassDelaration, MethodDefinition) to extract properties</p>
+<dl class="method">
+<dt id="reform.parse.javascriptmethodvisitor.JavaScriptMethodVisitor.generic_visit">
+<code class="descname">generic_visit</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptmethodvisitor.JavaScriptMethodVisitor.generic_visit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javascriptmethodvisitor.JavaScriptMethodVisitor.visit">
+<code class="descname">visit</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptmethodvisitor.JavaScriptMethodVisitor.visit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javascriptmethodvisitor.JavaScriptMethodVisitor.visit_Call">
+<code class="descname">visit_Call</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptmethodvisitor.JavaScriptMethodVisitor.visit_Call" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.javascriptmethodvisitor.JavaScriptMethodVisitor.visit_FunctionDef">
+<code class="descname">visit_FunctionDef</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.javascriptmethodvisitor.JavaScriptMethodVisitor.visit_FunctionDef" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-reform.parse.models">
+<span id="reform-parse-models-module"></span><h2>reform.parse.models module<a class="headerlink" href="#module-reform.parse.models" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="reform.parse.models.APINode">
+<em class="property">class </em><code class="descclassname">reform.parse.models.</code><code class="descname">APINode</code><span class="sig-paren">(</span><em>name</em>, <em>count=1</em>, <em>publicapi=False</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.models.APINode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Holds base properties of an AST element for reformulation: name, count, public API inclusion</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="reform.parse.models.AstNode">
+<em class="property">class </em><code class="descclassname">reform.parse.models.</code><code class="descname">AstNode</code><span class="sig-paren">(</span><em>st</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.models.AstNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Java AST Node holds parsed state and child elements</p>
+<dl class="method">
+<dt id="reform.parse.models.AstNode.children">
+<code class="descname">children</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.models.AstNode.children" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.models.AstNode.fields">
+<code class="descname">fields</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.models.AstNode.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="reform.parse.models.AstNode.name">
+<code class="descname">name</code><a class="headerlink" href="#reform.parse.models.AstNode.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="reform.parse.models.AstNode.type_name">
+<code class="descname">type_name</code><a class="headerlink" href="#reform.parse.models.AstNode.type_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="reform.parse.models.CorpusNode">
+<em class="property">class </em><code class="descclassname">reform.parse.models.</code><code class="descname">CorpusNode</code><span class="sig-paren">(</span><em>name</em>, <em>type_name</em>, <em>split_exclude_list=None</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.models.CorpusNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Stores raw corpus terms</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-reform.parse.pythonclassvisitor">
+<span id="reform-parse-pythonclassvisitor-module"></span><h2>reform.parse.pythonclassvisitor module<a class="headerlink" href="#module-reform.parse.pythonclassvisitor" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="reform.parse.pythonclassvisitor.PythonClassVisitor">
+<em class="property">class </em><code class="descclassname">reform.parse.pythonclassvisitor.</code><code class="descname">PythonClassVisitor</code><a class="headerlink" href="#reform.parse.pythonclassvisitor.PythonClassVisitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#reform.parse.pythoncorpus.PythonBaseVisitor" title="reform.parse.pythoncorpus.PythonBaseVisitor"><code class="xref py py-class docutils literal"><span class="pre">reform.parse.pythoncorpus.PythonBaseVisitor</span></code></a></p>
+<p>Visits important nodes (ClassDelaration, MethodDefinition) to extract properties</p>
+<dl class="method">
+<dt id="reform.parse.pythonclassvisitor.PythonClassVisitor.visit_ClassDef">
+<code class="descname">visit_ClassDef</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythonclassvisitor.PythonClassVisitor.visit_ClassDef" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.pythonclassvisitor.PythonClassVisitor.visit_FunctionDef">
+<code class="descname">visit_FunctionDef</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythonclassvisitor.PythonClassVisitor.visit_FunctionDef" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.pythonclassvisitor.PythonClassVisitor.visit_Import">
+<code class="descname">visit_Import</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythonclassvisitor.PythonClassVisitor.visit_Import" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.pythonclassvisitor.PythonClassVisitor.visit_ImportFrom">
+<code class="descname">visit_ImportFrom</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythonclassvisitor.PythonClassVisitor.visit_ImportFrom" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-reform.parse.pythoncorpus">
+<span id="reform-parse-pythoncorpus-module"></span><h2>reform.parse.pythoncorpus module<a class="headerlink" href="#module-reform.parse.pythoncorpus" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="reform.parse.pythoncorpus.PythonBaseVisitor">
+<em class="property">class </em><code class="descclassname">reform.parse.pythoncorpus.</code><code class="descname">PythonBaseVisitor</code><a class="headerlink" href="#reform.parse.pythoncorpus.PythonBaseVisitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ast.NodeVisitor</span></code></p>
+<p>Visits important nodes (ClassDelaration, MethodDefinition) to extract properties</p>
+<dl class="method">
+<dt id="reform.parse.pythoncorpus.PythonBaseVisitor.add_term">
+<code class="descname">add_term</code><span class="sig-paren">(</span><em>api_term</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythoncorpus.PythonBaseVisitor.add_term" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.pythoncorpus.PythonBaseVisitor.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythoncorpus.PythonBaseVisitor.clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.pythoncorpus.PythonBaseVisitor.generic_visit">
+<code class="descname">generic_visit</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythoncorpus.PythonBaseVisitor.generic_visit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.pythoncorpus.PythonBaseVisitor.normalized_name">
+<code class="descname">normalized_name</code><span class="sig-paren">(</span><em>api_term</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythoncorpus.PythonBaseVisitor.normalized_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="reform.parse.pythoncorpus.PythonCorpusStorage">
+<em class="property">class </em><code class="descclassname">reform.parse.pythoncorpus.</code><code class="descname">PythonCorpusStorage</code><span class="sig-paren">(</span><em>publicAPIPath</em>, <em>visitor</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythoncorpus.PythonCorpusStorage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>The storage holds all parsed Python snippets
+The storage also holds all parsed Python classes
+The key of the class storage is the class name - in the lower case. Which is used for operation,
+while the real name is used for the output</p>
+<dl class="method">
+<dt id="reform.parse.pythoncorpus.PythonCorpusStorage.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>st</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythoncorpus.PythonCorpusStorage.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds to the storage</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="reform.parse.pythoncorpus.python_parse">
+<code class="descclassname">reform.parse.pythoncorpus.</code><code class="descname">python_parse</code><span class="sig-paren">(</span><em>src</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythoncorpus.python_parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses snippets
+:param src: python source file
+:return:</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-reform.parse.pythonmethodvisitor">
+<span id="reform-parse-pythonmethodvisitor-module"></span><h2>reform.parse.pythonmethodvisitor module<a class="headerlink" href="#module-reform.parse.pythonmethodvisitor" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="reform.parse.pythonmethodvisitor.PythonMethodVisitor">
+<em class="property">class </em><code class="descclassname">reform.parse.pythonmethodvisitor.</code><code class="descname">PythonMethodVisitor</code><a class="headerlink" href="#reform.parse.pythonmethodvisitor.PythonMethodVisitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#reform.parse.pythoncorpus.PythonBaseVisitor" title="reform.parse.pythoncorpus.PythonBaseVisitor"><code class="xref py py-class docutils literal"><span class="pre">reform.parse.pythoncorpus.PythonBaseVisitor</span></code></a></p>
+<p>Visits important nodes (ClassDelaration, MethodDefinition) to extract properties</p>
+<dl class="method">
+<dt id="reform.parse.pythonmethodvisitor.PythonMethodVisitor.visit_Call">
+<code class="descname">visit_Call</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythonmethodvisitor.PythonMethodVisitor.visit_Call" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.pythonmethodvisitor.PythonMethodVisitor.visit_ClassDef">
+<code class="descname">visit_ClassDef</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythonmethodvisitor.PythonMethodVisitor.visit_ClassDef" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="reform.parse.pythonmethodvisitor.PythonMethodVisitor.visit_FunctionDef">
+<code class="descname">visit_FunctionDef</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.pythonmethodvisitor.PythonMethodVisitor.visit_FunctionDef" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-reform.parse.selector">
+<span id="reform-parse-selector-module"></span><h2>reform.parse.selector module<a class="headerlink" href="#module-reform.parse.selector" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="reform.parse.selector.CorpusSelector">
+<em class="property">class </em><code class="descclassname">reform.parse.selector.</code><code class="descname">CorpusSelector</code><a class="headerlink" href="#reform.parse.selector.CorpusSelector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Selects corpus storage based on the language and options</p>
+<dl class="attribute">
+<dt id="reform.parse.selector.CorpusSelector.PATH_MAP">
+<code class="descname">PATH_MAP</code><em class="property"> = {'JAVA_CLASSES': '/Users/yuriy/Documents/projects/up/sandbox/query-reform/query-reform/docs/data/APIClassesListJava8.txt', 'PYTHON_METHODS': '/Users/yuriy/Documents/projects/up/sandbox/query-reform/query-reform/docs/data/APIMethodsListPython27.txt', 'PYTHON_CLASSES': '/Users/yuriy/Documents/projects/up/sandbox/query-reform/query-reform/docs/data/APIClassesListPython27.txt', 'JAVASCRIPT_METHODS': '/Users/yuriy/Documents/projects/up/sandbox/query-reform/query-reform/docs/data/APIMethodsListJavaScript.txt', 'JAVA_METHODS': '/Users/yuriy/Documents/projects/up/sandbox/query-reform/query-reform/docs/data/APIMethodsListJava8.txt'}</em><a class="headerlink" href="#reform.parse.selector.CorpusSelector.PATH_MAP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="reform.parse.selector.CorpusSelector.select">
+<em class="property">static </em><code class="descname">select</code><span class="sig-paren">(</span><em>language</em>, <em>methods</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#reform.parse.selector.CorpusSelector.select" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select corpus storage
+:param language: requested language
+:param methods: if method reformulation (default: classes)
+:param kwargs: additional options (for testing)
+:return: corpus storage or NotImplemented</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-reform.parse">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-reform.parse" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, LudditeLabs.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

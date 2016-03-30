@@ -1,4 +1,0 @@
-[run]
-parallel = True
-source = reform
-omit = reform/tests/*

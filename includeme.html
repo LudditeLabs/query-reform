@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>About &mdash; reformulate 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="reformulate 1.0 documentation" href="index.html"/>
+        <link rel="prev" title="Welcome to reformulate’s documentation!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> reformulate
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#install">Install</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pip-and-virualenv">pip and virualenv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conda">Conda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-installation">Check installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#usage">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#index">Index</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reformulation">Reformulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-different-languages">Using different languages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interactive-mode">Interactive mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#additional-parameters">Additional parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#useful-snippets">Useful snippets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-a-big-dataset">Downloading a big dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-indexing-on-a-big-dataset">Running indexing on a big dataset</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#api-usage-examples">API usage examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#normalization">Normalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vectorization">Vectorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#language-specific-reformulations">Language-specific reformulations</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">reformulate</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>About</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/includeme.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="about">
+<h1>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h1>
+<p>When searching for useful code snippets, it helps to reformulate search queries in terms of code classes or methods. For example, a query: <em>&#8220;How to download a file by URL in Java&#8221;</em>, can be expanded to include <em>&#8220;InputStream, Vector, DataOutputStream&#8221;</em>. These terms are extracted from a pre-indexed storage that is built using example Java codes.</p>
+<p>Code search are formulated as a natural-language query, but actual code may contain esoteric terms and phrases which can be difficult to retrieve. This tool translates and expands natural-language queries to a format that can be fed to a code search system for more relevant search results.
+See <a class="reference external" href="https://qspace.library.queensu.ca/bitstream/1974/13431/1/Niu_Haoran_201507_MASC.pdf">details</a>.</p>
+</div>
+<div class="section" id="install">
+<h1>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pip-and-virualenv">
+<h2>pip and virualenv<a class="headerlink" href="#pip-and-virualenv" title="Permalink to this headline">¶</a></h2>
+<p>To setup the application, it requires <a class="reference external" href="http://pip.readthedocs.org/en/stable/installing/">pip</a>. and you might want to use a <a class="reference external" href="http://docs.python-guide.org/en/latest/dev/virtualenvs/">python virtual environment</a>.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span># activate a virtualenv
+
+# install requirements
+pip install -r requirements.txt
+</pre></div>
+</div>
+</div>
+<div class="section" id="conda">
+<h2>Conda<a class="headerlink" href="#conda" title="Permalink to this headline">¶</a></h2>
+<p>To setup the application with Conda package management system, it requires <a class="reference external" href="http://conda.pydata.org/docs/">conda</a>.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span># Install conda
+
+# Create a conda environment from conda.yml
+conda env create -f conda.yml
+
+# Activate the environment
+source activate reformulate
+</pre></div>
+</div>
+</div>
+<div class="section" id="check-installation">
+<h2>Check installation<a class="headerlink" href="#check-installation" title="Permalink to this headline">¶</a></h2>
+<p>To check if the package properly installed you may run tests and perform a simple refomulation</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span># (optional) run tests
+python -m unittest discover
+
+# build a sample index
+python reformulation.py index ./data/samples/Java/
+
+# run a sample reformulation
+python reformulation.py reform &quot;how to write a file&quot;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p>Before reformulation can be performed, the index has to be created. The index is based on training data - code snippets.
+It contains frequencies of each normalized term in the corpus and ASTs that will be used for reformulation.
+The index can be created once for each corpus and then reused for every query.</p>
+<div class="section" id="index">
+<h2>Index<a class="headerlink" href="#index" title="Permalink to this headline">¶</a></h2>
+<p>To create index run:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>python reformulation.py index /path/to/code/snippets
+</pre></div>
+</div>
+<p>The specified path is scanned (non-recursively) to find code files. Code files are parsed and snippets
+are extracted from each file. The index is stored in the <em>./index</em> folder with <em>index</em> base name. The default path
+can be changed. <em>python reformulation.py &#8211;help</em> shows available parameters.
+Note, that the index operation is a slow operation if there are many code files involved.
+Once the index is created it can used for reformulation.</p>
+</div>
+<div class="section" id="reformulation">
+<h2>Reformulation<a class="headerlink" href="#reformulation" title="Permalink to this headline">¶</a></h2>
+<p>To reformulate queries run:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>python reformulation.py reform &quot;how to download file by URL&quot;
+</pre></div>
+</div>
+<p>The command reformulates the input query using the index in the <em>./index</em> folder. The output is printed to the console.
+By default, the output contains only public API methods. <em>&#8211;all</em> parameters can be used to loosen the limit.</p>
+</div>
+<div class="section" id="using-different-languages">
+<h2>Using different languages<a class="headerlink" href="#using-different-languages" title="Permalink to this headline">¶</a></h2>
+<p>The default language for reformulation is Java. You can change the setting with the <em>&#8211;lang=&#8221;Python&#8221;</em> parameter. The parameter
+must be specified both at the index and reformulation stage.</p>
+</div>
+<div class="section" id="interactive-mode">
+<h2>Interactive mode<a class="headerlink" href="#interactive-mode" title="Permalink to this headline">¶</a></h2>
+<p>In the interactive mode the application accepts queries and outputs the reformulation result in the terminal.
+To enter the interactive mode use <em>-i</em> key of the <em>reform</em> command.</p>
+</div>
+</div>
+<div class="section" id="additional-parameters">
+<h1>Additional parameters<a class="headerlink" href="#additional-parameters" title="Permalink to this headline">¶</a></h1>
+<p>To find out all available parameters, please, run:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>python reformulation.py --help
+</pre></div>
+</div>
+<p>With additional parameters you can change index path to build multiple index files, change language, logging output, etc.</p>
+</div>
+<div class="section" id="useful-snippets">
+<h1>Useful snippets<a class="headerlink" href="#useful-snippets" title="Permalink to this headline">¶</a></h1>
+<p>Try out sample data:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>python reformulation.py index data/samples/Java/ --name=&quot;samples&quot;
+
+python reformulation.py reform &quot;how to download file by URL&quot; --name=&quot;samples&quot;
+python reformulation.py reform &quot;output random numbers&quot; --name=&quot;samples&quot;
+python reformulation.py reform &quot;connect to a server&quot; --name=&quot;samples&quot;
+python reformulation.py reform &quot;read input lines&quot; --name=&quot;samples&quot; --all
+</pre></div>
+</div>
+<p>Use multiple index files at the same time:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>python reformulation.py index PATH_TO_SAMPLES --name=&quot;samples&quot;
+python reformulation.py index PATH_TO_DEFAULT --name=&quot;default&quot;
+
+python reformulation.py reform &quot;how to download file by URL&quot; --name=&quot;samples&quot;
+python reformulation.py reform &quot;output random numbers&quot; --name=&quot;default&quot;
+</pre></div>
+</div>
+<p>Loosen the public API limit:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>python reformulation.py reform &quot;how to download file by URL&quot; --name=&quot;samples&quot; --all
+</pre></div>
+</div>
+<p>Build index and reformulate terms using Java methods for reformulation:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>python reformulation.py index ./data/samples/Java --name=&quot;samples&quot; --methods
+python reformulation.py reform &quot;how to download file by URL&quot; --name=&quot;samples&quot; --methods
+</pre></div>
+</div>
+<p>Build index and reformulate terms using Python methods for reformulation:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>python reformulation.py index ./data/samples/Python --name=&quot;samples_python&quot; --methods --lang=&quot;Python&quot;
+python reformulation.py reform &quot;segment length to remove&quot; --name=&quot;samples_python&quot; --methods --lang=&quot;Python&quot;
+</pre></div>
+</div>
+<p>Build index for all files in a repository recursively</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>python reformulation.py index PATH -r
+</pre></div>
+</div>
+<div class="section" id="downloading-a-big-dataset">
+<h2>Downloading a big dataset<a class="headerlink" href="#downloading-a-big-dataset" title="Permalink to this headline">¶</a></h2>
+<p>The chain of the links for the dataset (<a class="reference external" href="https://github.com/clonebench/BigCloneBench">https://github.com/clonebench/BigCloneBench</a> -&gt; <a class="reference external" href="https://drive.google.com/file/d/0B70GNOiQD-X7ZDVBMzRUWktDUWs/view">https://drive.google.com/file/d/0B70GNOiQD-X7ZDVBMzRUWktDUWs/view</a> -&gt; Download file ERA_BigCloneBench_IJaDataset.tar.gz).
+The archive (when unzipped) has 3 folders, they are actually subsets of one another. So it&#8217;s better to use one folder only for one index command</p>
+</div>
+<div class="section" id="running-indexing-on-a-big-dataset">
+<h2>Running indexing on a big dataset<a class="headerlink" href="#running-indexing-on-a-big-dataset" title="Permalink to this headline">¶</a></h2>
+<p>Indexing of big datasets with 200k+ files takes RAM so to it is possible to dump intermediate data from RAM to starage with &#8211;dump option.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>python reformulation.py index data/samples/Java/ --name=&quot;samples&quot; -d
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="api-usage-examples">
+<h1>API usage examples<a class="headerlink" href="#api-usage-examples" title="Permalink to this headline">¶</a></h1>
+<p>Parts of the code can be reused for <em>ad hoc</em> reformulation-related tasks.</p>
+<div class="section" id="normalization">
+<h2>Normalization<a class="headerlink" href="#normalization" title="Permalink to this headline">¶</a></h2>
+<p>Normalization is the process of removal of common words and stemming of a query.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">reform.processing.normalize</span> <span class="kn">import</span> <span class="n">Normalizer</span>
+
+<span class="n">normalizer</span> <span class="o">=</span> <span class="n">Normalizer</span><span class="p">()</span>
+
+<span class="c1"># split on query terms, removes stop-words, stemms the terms</span>
+<span class="n">normalizer</span><span class="o">.</span><span class="n">process_query</span><span class="p">(</span><span class="s2">&quot;how to play sound using java&quot;</span><span class="p">)</span>
+
+<span class="c1"># [&#39;play&#39;, &#39;sound&#39;, &#39;use&#39;, &#39;java&#39;]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="vectorization">
+<h2>Vectorization<a class="headerlink" href="#vectorization" title="Permalink to this headline">¶</a></h2>
+<p>Vectorization is the process counting the most common words that can be followed by reformulation.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">reform.parse.models</span> <span class="kn">import</span> <span class="n">APINode</span>
+<span class="kn">from</span> <span class="nn">reform.processing.vectorize</span> <span class="kn">import</span> <span class="n">Vectorizer</span>
+
+<span class="c1"># input snippets</span>
+<span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">[</span><span class="s1">&#39;downloadwebpagesampl&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">,</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;client&#39;</span><span class="p">,</span> <span class="s1">&#39;http&#39;</span><span class="p">,</span> <span class="s1">&#39;client&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;build&#39;</span><span class="p">,</span> <span class="s1">&#39;http&#39;</span><span class="p">,</span> <span class="s1">&#39;client&#39;</span><span class="p">,</span> <span class="s1">&#39;httpclient&#39;</span><span class="p">,</span> <span class="s1">&#39;request&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">,</span> <span class="s1">&#39;http&#39;</span><span class="p">,</span> <span class="s1">&#39;get&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;httpget&#39;</span><span class="p">,</span> <span class="s1">&#39;http&#39;</span><span class="p">,</span> <span class="s1">&#39;get&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;httpget&#39;</span><span class="p">,</span> <span class="s1">&#39;respons&#39;</span><span class="p">,</span> <span class="s1">&#39;request&#39;</span><span class="p">,</span> <span class="s1">&#39;client&#39;</span><span class="p">,</span> <span class="s1">&#39;execut&#39;</span><span class="p">,</span> <span class="s1">&#39;http&#39;</span><span class="p">,</span> <span class="s1">&#39;respons&#39;</span><span class="p">,</span> <span class="s1">&#39;httprespons&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;line&#39;</span><span class="p">,</span> <span class="s1">&#39;br&#39;</span><span class="p">,</span> <span class="s1">&#39;read&#39;</span><span class="p">,</span> <span class="s1">&#39;line&#39;</span><span class="p">,</span> <span class="s1">&#39;page&#39;</span><span class="p">,</span> <span class="s1">&#39;line&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;</span><span class="se">\\</span><span class="s1">n&quot;&#39;</span><span class="p">,</span> <span class="s1">&#39;br&#39;</span><span class="p">,</span> <span class="s1">&#39;close&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;client&#39;</span><span class="p">,</span> <span class="s1">&#39;protocol&#39;</span><span class="p">,</span> <span class="s1">&#39;except&#39;</span><span class="p">,</span> <span class="s1">&#39;clientprotocolexcept&#39;</span><span class="p">,</span> <span class="s1">&#39;io&#39;</span><span class="p">,</span> <span class="s1">&#39;except&#39;</span><span class="p">,</span> <span class="s1">&#39;ioexcept&#39;</span><span class="p">]</span>
+        <span class="p">]</span>
+
+<span class="c1"># terms storage to output</span>
+<span class="n">ast_classes_storage</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;httpclient&quot;</span><span class="p">:</span> <span class="n">APINode</span><span class="p">(</span><span class="s2">&quot;HttpClient&quot;</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">)}</span>
+
+<span class="c1"># trains the model</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">Vectorizer</span><span class="p">()</span>
+<span class="n">vectorizer</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">corpus</span><span class="p">,</span> <span class="n">ast_classes_storage</span><span class="p">,</span> <span class="n">min_count</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># performes reformulation</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">reformulate</span><span class="p">([</span><span class="s2">&quot;request&quot;</span><span class="p">],</span> <span class="n">num_res</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># [&#39;HttpClient&#39;]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="language-specific-reformulations">
+<h2>Language-specific reformulations<a class="headerlink" href="#language-specific-reformulations" title="Permalink to this headline">¶</a></h2>
+<p>Find a language using the input parameters</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">reform.parse.selector</span> <span class="kn">import</span> <span class="n">CorpusSelector</span>
+
+<span class="n">corpus_storage</span><span class="p">,</span> <span class="n">parse</span> <span class="o">=</span> <span class="n">CorpusSelector</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">lang</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">methods</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">corpus_storage</span> <span class="o">==</span> <span class="bp">NotImplemented</span><span class="p">:</span>
+    <span class="k">return</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to reformulate’s documentation!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, LudditeLabs.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
